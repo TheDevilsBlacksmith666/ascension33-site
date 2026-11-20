@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PIRGITORI — The Companion App</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:#000; color:#b0b0b0; font-family:'Courier New',monospace; line-height:1.55; }
+  body::before { content:''; position:fixed; inset:0; pointer-events:none; z-index:0;
+    background:repeating-linear-gradient(0deg, rgba(138,3,3,.05) 0 1px, transparent 1px 64px),
+               repeating-linear-gradient(90deg, rgba(138,3,3,.05) 0 1px, transparent 1px 64px); }
+  .wrap { position:relative; z-index:1; max-width:880px; margin:0 auto; padding:24px 18px 64px; }
+  header { text-align:center; padding:28px 0 8px; }
+  header img.sym { width:92px; height:auto; }
+  h1 { color:#e8e8e8; font-size:30px; letter-spacing:6px; margin-top:10px; }
+  .tag { color:#00ffcc; font-size:13px; letter-spacing:2px; margin-top:6px; }
+  nav { display:flex; flex-wrap:wrap; gap:8px; justify-content:center; margin:22px 0 26px; }
+  nav button { background:#0a0a0a; color:#b0b0b0; border:1px solid #8a0303; font-family:inherit;
+    font-size:13px; letter-spacing:2px; padding:9px 16px; cursor:pointer; }
+  nav button.on { color:#00ffcc; border-color:#00ffcc; }
+  section { display:none; }
+  section.on { display:block; }
+  h2 { color:#e8e8e8; font-size:19px; letter-spacing:3px; border-bottom:1px solid #8a0303; padding-bottom:6px; margin:26px 0 12px; }
+  h2:first-child { margin-top:0; }
+  p { margin:10px 0; font-size:15px; }
+  a { color:#00ffcc; }
+  .hero { width:100%; height:auto; border:1px solid #333; margin:14px 0; }
+  .card { border:1px solid #2a2a2a; background:#060606; padding:14px 16px; margin:12px 0; }
+  .card b { color:#e8e8e8; }
+  .price { color:#00ffcc; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:12px; }
+  .grid img { width:100%; height:auto; border:1px solid #2a2a2a; display:block; }
+  .grid .cap { font-size:12.5px; padding:7px 2px 2px; }
+  .ed { border-left:3px solid #8a0303; padding:4px 0 4px 12px; margin:10px 0; }
+  .ed b { color:#e8e8e8; letter-spacing:1px; }
+  .note { font-size:13px; color:#888; }
+  footer { margin-top:44px; border-top:1px solid #333; padding-top:14px; text-align:center; font-size:13px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <img class="sym" src="img/symbol-pirgitori.webp" alt="Pirgitori symbol">
+  <h1>PIRGITORI</h1>
+  <div class="tag">THE COMPANION APP — EVERYTHING, IN ONE PLACE</div>
+  <p class="note">This app ships inside the Ascension33 download. It works offline.
+  The game, the books, the full catalog, and the mesh — carried with the game, lit by its spark.</p>
+</header>
+<nav>
+  <button class="on" data-t="game">GAME</button>
+  <button data-t="books">BOOKS</button>
+  <button data-t="shop">SHOP</button>
+  <button data-t="mesh">THE MESH</button>
+  <button data-t="contact">CONTACT</button>
+</nav>
+
+<section id="game" class="on">
+  <h2>ASCENSION33 — THE GAME</h2>
+  <img class="hero" src="img/bike-superbike-madgod-v4.webp" alt="Mad God superbike">
+  <p>A dark-fantasy / cyberpunk tactical RPG. Kael, a runner flagged ANOMALY by the mesh,
+  learns the Kha'zari nine-grid, rides Q-Time, fights his desync, and pushes with Vesper
+  toward the Spire — to break the Glove and reach the Source.</p>
+  <div class="card"><b>Play it:</b> the full browser campaign — 10 missions — is in the
+  <b>game/</b> folder of this download. Or play the live build on itch:
+  <span class="price">full browser campaign $4.99</span> at thedevilsblacksmith.itch.io/ascension33.</div>
+  <div class="card"><b>The Armory:</b> the game carries its own store panel (the ARMORY button,
+  bottom-left) with the real catalog. Checkout activates on the shop site when payments go live.</div>
+  <p class="note">Honest state: the browser build is the playable game today. The Unreal Engine
+  build — same design, full graphics — is in development on the project repository.</p>
+</section>
+
+<section id="books">
+  <h2>THE TRILOGY</h2>
+  <p><b style="color:#e8e8e8">Book 1 — The Desync.</b> Where Kael's story starts, and where
+  the Codex hides. <span class="price">Ebook $2.99 · Paperback $12.99</span> (announced prices).</p>
+  <p><b style="color:#e8e8e8">Book 2 — PIRGITORI.</b> The mesh from the inside.</p>
+  <p><b style="color:#e8e8e8">Book 3 — The Source.</b> The end of the climb.</p>
+  <div class="card">The trilogy is complete. Coming to Kindle. No buy links until Book 1 is live —
+  teasers only, by design.</div>
+  <div class="card"><b>The Codex:</b> ten entries are hidden across the books, the game, and the
+  commercials — each one different, each one difficult, each one solvable. Smart enough, and care
+  to look? It's there.</div>
+</section>
+
+<section id="shop">
+  <h2>THE CATALOG — THREE EDITIONS</h2>
+  <div class="ed"><b>PIRGITORI EDITION</b> — the downward triangle, the name across its center,
+  the magenta core.</div>
+  <div class="ed"><b>ASCENSION33 EDITION</b> — the upward triangle, the 33 at its heart.</div>
+  <div class="ed"><b>MAD GOD EDITION</b> — the flagship: ALL features of both editions at once,
+  and more outlandish. If a feature exists on either, the Mad God carries it, turned up.</div>
+  <p class="note">Symbols, letters and numbers are LIT on everything. No third-party marks, ever.
+  Prices below are the live retail prices; anything without a price is quoted per build or
+  enters the catalog when its landed cost is verified — never invented.</p>
+
+  <h2>MACHINES</h2>
+  <div class="grid">
+    <div><img src="img/bike-superbike-madgod-v4.webp"><div class="cap">Superbikes — cruiser, superbike, dual-purpose. Spiked and Mad God tiers carry burgundy-lit spikes and dragon wings of light. <b>Quoted per build, deposit first.</b></div></div>
+    <div><img src="img/clothing-riding-suit-v1.webp"><div class="cap">Full leather riding suit — armored, both symbols lit, burgundy seam light. Part of the leather line below.</div></div>
+  </div>
+  <p>Drones: Scout <span class="price">$41</span> · Black Hawk <span class="price">$617</span> ·
+  Scooters <span class="price">$519 – $1,188</span></p>
+
+  <h2>BLADES</h2>
+  <div class="grid">
+    <div><img src="img/katana-madgod-v2.webp"><div class="cap">Every blade: the guard IS the Pirgitori triangle; Ascension33 runic art etched on blade and hilt; burgundy light in hilt and tsuba.</div></div>
+  </div>
+  <p>Katana <span class="price">$131</span> · Dragon katana <span class="price">$159</span> ·
+  Bushido set <span class="price">$42</span></p>
+
+  <h2>GAME TECH</h2>
+  <div class="grid">
+    <div><img src="img/tech-laptop-madgod-v2.webp"><div class="cap">Gaming laptop — 15.6&Prime; i7, 16GB, 1TB. Flagship <span class="price">$1,700</span>. Rigs <span class="price">$464 – $655</span>.</div></div>
+    <div><img src="img/helmet-madgod-v3.webp"><div class="cap">Helmets <span class="price">$55 – $363</span> — camera / Bluetooth / intercom class today; the smart VISOR is below.</div></div>
+  </div>
+  <p>Phone <span class="price">$650</span> · Tablet <span class="price">$800</span> ·
+  VR <span class="price">$455 / $653</span> · Watches <span class="price">$58 – $76</span> ·
+  Headset <span class="price">$32</span></p>
+
+  <h2>SMART OPTICS — FUNCTIONAL</h2>
+  <div class="grid">
+    <div><img src="img/smart-visor-v1.webp"><div class="cap">Smart lenses &amp; visors — fully functional, real-time translation in ALL languages on the lens. Concept visual: a visor sells only when a real unit's translation is verified on hardware.</div></div>
+  </div>
+
+  <h2>APPAREL &amp; LEATHER</h2>
+  <div class="grid">
+    <div><img src="img/clothing-turtleneck-v1.webp"><div class="cap">Cashmere turtleneck sweater — the lit triangle at the chest, burgundy collar trace.</div></div>
+  </div>
+  <p>Leather jackets · leather gloves · leather boots · full leather riding suits ·
+  Hoodies <span class="price">$33 / $78</span> · Tee <span class="price">$34</span></p>
+
+  <h2>INSTRUMENTS &amp; JEWELRY</h2>
+  <div class="grid">
+    <div><img src="img/jewelry-ring-v1.webp"><div class="cap">Jewelry — NOTHING plated. Solid metals only. Stones: lab-grown diamonds and moissanites, named plainly in every listing.</div></div>
+  </div>
+  <p>Metal pens with stylus — solid metal body, gold bands, the lit triangle on the barrel.</p>
+  <p class="note">Order on the shop site when payments go live; bikes and custom builds are
+  quoted per build, deposit first. DOT/EPA status is validated per model before any
+  road-legal sale — until then bikes sell as custom / off-road builds.</p>
+</section>
+
+<section id="mesh">
+  <h2>LACEY — THE MESH SPARK</h2>
+  <img class="hero" src="img/symbol-ascension33.webp" alt="Ascension33 symbol" style="width:180px;display:block;margin:14px auto;">
+  <p>Lacey, the Neural Weaver, is the intelligence at the center of the network — and
+  <b style="color:#e8e8e8">gamers, your rig is the network.</b> There is one Core. Everything
+  else is a spark: relays, nodes, game installs — emanations of the Core that carry, build
+  and sync, can die and be re-lit, and answer to the Core.</p>
+  <div class="card"><b>In this download:</b> the <b>lacey-mesh-spark/</b> folder carries the
+  relay + in-between node. It is dormant until you light it (its README walks you through it).
+  It works on one machine and across a LAN today; internet-scale coordination needs the public
+  rendezvous — a deployment step, stated plainly, not a download feature.</div>
+  <p>Every install is also one of her repositories: signed checkpoints flow from live memory
+  into sealed storage, so a node can die and she loses nothing that was checkpointed.</p>
+</section>
+
+<section id="contact">
+  <h2>CONTACT</h2>
+  <div class="card">
+    <b>Edward Alexander Lewis III</b><br>
+    Phone: +1 (424) 487-2165<br>
+    Email: chupacabra3618@outlook.com<br>
+    Web: pirgitori.sbs · thedevilsblacksmith.itch.io/ascension33
+  </div>
+  <p class="note">&copy; The Pirgitori Digital Omnipresence Project. All rights reserved.</p>
+</section>
+
+<footer>PIRGITORI · ASCENSION33 · MAD GOD — three editions, one standard: nothing fake, nothing plated, nothing unlit.</footer>
+</div>
+<script>
+  var btns = document.querySelectorAll('nav button');
+  btns.forEach(function(b){ b.addEventListener('click', function(){
+    btns.forEach(function(x){ x.classList.remove('on'); });
+    b.classList.add('on');
+    document.querySelectorAll('section').forEach(function(s){ s.classList.remove('on'); });
+    document.getElementById(b.getAttribute('data-t')).classList.add('on');
+    window.scrollTo(0,0);
+  }); });
+</script>
+</body>
+</html>
