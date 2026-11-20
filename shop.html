@@ -17,10 +17,18 @@ nav a { color: var(--shadowlord); text-decoration: none; }
 nav a:hover { text-shadow: 0 0 10px var(--shadowlord); }
 .panel { background: var(--vantablack); border: 1px solid #222; padding: 24px; margin-bottom: 30px; }
 .panel h2 { color: #fff; font-size: 20px; letter-spacing: 3px; border-left: 3px solid var(--crimson); padding-left: 12px; text-align: left; text-transform: uppercase; margin-top: 0; }
-.panel h3 { color: #fff; font-size: 16px; letter-spacing: 2px; text-transform: uppercase; }
+.panel h3 { color: #fff; font-size: 16px; letter-spacing: 2px; text-transform: uppercase; margin-top: 26px; }
 .panel img { max-width: 100%; height: auto; border: 1px solid #444; display: block; margin: 12px auto; }
 a { color: var(--shadowlord); }
 strong { color: #e8e8e8; }
+details.item { border: 1px solid #333; background: #050505; padding: 10px 14px; margin: 10px 0; }
+details.item summary { cursor: pointer; font-size: 15px; padding: 4px 0; }
+details.item summary:hover { color: #fff; }
+details.item img { max-width: 640px; }
+ul.specs { margin: 8px 0 8px 18px; padding: 0; }
+ul.specs li { margin: 2px 0; }
+p.buy { font-size: 16px; margin: 10px 0 4px; }
+.editions img { max-width: 420px; }
 </style>
 </head>
 <body>
@@ -35,14 +43,19 @@ strong { color: #e8e8e8; }
 
 <p>Everything here carries the Pirgitori or Ascension33 mark — and the whole
 catalog is also sold inside the game, from the Armory panel in Ascension33.
-Each item is labeled how it reaches you:</p>
+<strong>Tap any item to expand it</strong> — full description, sizes and
+stats, edition pictures and its buy link. Each item is labeled how it
+reaches you:</p>
 
 <p><strong>DROPSHIP</strong> — made to order and shipped directly to you.
 <strong>CUSTOM ORDER</strong> — built or batched to order, inspected, then
 shipped. <strong>STOCK &amp; SHIP</strong> — branded in small batches and
 shipped by us. Product visuals are our design targets in the house colors —
 vantablack, Ascension cyan and magenta, weaver red, Spire gold; the shipped
-unit carries our marks, applied to the build.</p>
+unit carries our marks, applied to the build. Everything comes in three
+editions: <strong>PIRGITORI</strong> (downward triangle, magenta core),
+<strong>ASCENSION33</strong> (upward triangle, 33 at its heart) and the
+<strong>MAD DEAD GOD</strong> flagship — all features of both, lit together.</p>
 
 <p><img src="img/symbol-pirgitori.webp" alt="The Pirgitori symbol — downward rune triangle, PIRGITORI" style="max-width:220px;">
 <img src="img/symbol-ascension33.webp" alt="The Ascension33 symbol — upward rune triangle, 33, ASCENSION33" style="max-width:220px;"></p>
@@ -51,44 +64,138 @@ unit carries our marks, applied to the build.</p>
 
 <h3>BLADES</h3>
 
-<p><img src="img/katana-symbol-tsuba.webp" alt="Pirgitori katana — the tsuba cast as the Pirgitori symbol" style="max-width:100%;"></p>
-
 <p><em>Every Pirgitori blade carries the symbol where a tsuba belongs:
 the hand guard is cast as the downward rune triangle itself, in gold.
-The marks are the symbols — PIRGITORI and ASCENSION33, names on them —
-on the blades, the lids, the armor, everything.</em></p>
-
-<p><strong>Handmade Samurai Katana — 104cm — $262</strong> &middot; CUSTOM ORDER<br>
-Hand-forged, full tang, made to order.</p>
-
-<p><strong>Customizable Dragon Katana — 101cm — $318</strong> &middot; CUSTOM ORDER<br>
-The custom blade — your engraving, your fittings.</p>
-
-<p><strong>Black Bushido Katana — $84</strong> &middot; CUSTOM ORDER<br>
-The volume blade — black on black.</p>
+Ascension33 runic art is etched along the blade flat and into the hilt
+wrap, and the hilt and tsuba carry burgundy light. An unetched blade
+is unfinished.</em></p>
+<details class="item">
+<summary><strong>Handmade Samurai Katana — 104cm — $262</strong> &middot; CUSTOM ORDER &middot; tap to expand</summary>
+<img src="img/katana-symbol-tsuba.webp" alt="Pirgitori katana — the tsuba cast as the Pirgitori symbol">
+<p>Hand-forged and full tang, made to order. The guard is the Pirgitori triangle itself, in gold, in the guard position — not a plaque, not a round tsuba. Runic etching runs the flat of the blade and the wrap of the hilt, with burgundy light seated in the hilt.</p>
+<ul class="specs">
+<li>Overall length: 104cm class</li>
+<li>Construction: hand-forged, full tang</li>
+<li>Guard: Pirgitori triangle tsuba, gold</li>
+<li>Etching: Ascension33 runes on blade flat and hilt wrap</li>
+<li>Editions: Pirgitori · Ascension33 · Mad Dead God</li>
+</ul>
+<div class="editions"><p><em>The Mad Dead God edition blade — both symbols lit together, studs on the pommel cap and scabbard mouth only, grip kept clean:</em></p><img src="img/katana-madgod-v2.webp" alt="Mad Dead God katana — both symbols, lit"></div>
+<p class="buy"><a href="https://buy.stripe.com/9B6bIUfoZgW9dwf16Q0Ba0d"><strong>BUY THE HANDMADE KATANA — $262</strong></a></p>
+</details>
+<details class="item">
+<summary><strong>Customizable Dragon Katana — 101cm — $318</strong> &middot; CUSTOM ORDER &middot; tap to expand</summary>
+<img src="img/katana-lit-v2.webp" alt="Dragon katana — lit hilt and tsuba">
+<p>The custom blade: your engraving, your fittings, the dragon worked into the build. Burgundy light burns in the hilt and the triangle tsuba. Built to your specification, start to finish.</p>
+<ul class="specs">
+<li>Overall length: 101cm class</li>
+<li>Custom engraving and fittings to order</li>
+<li>Guard: Pirgitori triangle tsuba, gold</li>
+<li>Lighting: burgundy, hilt and tsuba</li>
+<li>Editions: Pirgitori · Ascension33 · Mad Dead God</li>
+</ul>
+<p class="buy"><a href="https://buy.stripe.com/aFa00cekVfS54ZJbLu0Ba0e"><strong>BUY THE DRAGON KATANA — $318</strong></a></p>
+</details>
+<details class="item">
+<summary><strong>Black Bushido Katana — $84</strong> &middot; CUSTOM ORDER &middot; tap to expand</summary>
+<img src="img/katana-etched.webp" alt="Black Bushido katana — etched blade">
+<p>The volume blade — black on black. Full runic etching on a darkened flat, triangle tsuba, made to be carried and used, not shelved.</p>
+<ul class="specs">
+<li>Finish: black on black</li>
+<li>Etching: Ascension33 runes on the blade flat</li>
+<li>Guard: Pirgitori triangle tsuba</li>
+<li>Editions: Pirgitori · Ascension33 · Mad Dead God</li>
+</ul>
+<p class="buy"><a href="https://buy.stripe.com/cNiaEQfoZ9tHdwfaHq0Ba0f"><strong>BUY THE BLACK BUSHIDO — $84</strong></a></p>
+</details>
 
 <h3>MACHINES — CUSTOM PIRGITORI ELECTRIC MOTORCYCLES</h3>
 
 <p><img src="img/poster-machines.webp" alt="Cruiser, superbike, dual-purpose and scooter in house colors" style="max-width:100%;"></p>
 <p><em>Model code: PG = Pirgitori, A33 = Ascension33 &middot; class letter
 (C cruiser, S superbike, D dual-purpose, X custom, W wide-tire, T scooter)
-&middot; number = motor power in hundreds of watts &middot; MDG = Mad Dead God edition.</em></p>
-
-
-<p><strong>Pirgitori Cruiser PG-C30 — fat tire — $6,000</strong> &middot; CUSTOM ORDER<br>
-3000W 60V fat tire cruiser, double suspension, disc brakes &middot; deposit first</p>
-
-<p><strong>Ascension33 Superbike A33-S100 — full-fairing racer — $9,000</strong> &middot; CUSTOM ORDER<br>
-Full-fairing racing machine, 10000W &middot; Mad Dead God flagship A33-S200-MDG, 20000W — $12,000 &middot; deposit first</p>
-
-<p><strong>Pirgitori Dual-Purpose PG-D30 — adventure class — $4,000</strong> &middot; CUSTOM ORDER<br>
-72V dual-sport electric, street and dirt, 3000W class &middot; deposit first</p>
-
-<p><strong>Pirgitori Custom PG-X50 — built to order — $3,000</strong> &middot; CUSTOM ORDER<br>
-2000W&ndash;5000W, 72V &middot; your colors, your marks, built to order &middot; deposit first</p>
-
-<p><strong>Pirgitori Wide-Tire PG-W80 — 3000W&ndash;8000W — $5,000</strong> &middot; CUSTOM ORDER<br>
-Removable lithium battery &middot; deposit first</p>
+&middot; number = motor power in hundreds of watts &middot; MDG = Mad Dead God edition.
+Every bike: the lit 33 triangle on the tank, dragon-wing LED projectors at
+the front casting webbed wings on the road to the left and right (1 Burgundy,
+2 Gold, 3 Burgundy+Gold mixed — both sides always matching), solid tires with
+the light inside the tire ring, and spikes only where they never touch the
+rider or the machine's motion. Designed to DOT standards; certification is
+verified per model before a road-legal sale.</em></p>
+<details class="item">
+<summary><strong>Ascension33 Superbike A33-S200-MDG — MAD DEAD GOD FLAGSHIP — 20000W — $12,000</strong> &middot; CUSTOM ORDER &middot; tap to expand</summary>
+<img src="img/bike-superbike-madgod-v4.webp" alt="Mad Dead God superbike — both symbols lit, dragon wings cast on the road">
+<p>The flagship of the whole machine line. Both symbols lit together on a vantablack full-fairing racer, the 33 triangle fused into the tank, burgundy-lit spikes on the cowl edges and tail — never in the rider's space — and the full dragon-wing projection in all three modes. Final quote per build; deposit first.</p>
+<ul class="specs">
+<li>Motor: 20000W class</li>
+<li>Fairing: full, vantablack, both symbols lit</li>
+<li>Tank: lit Ascension33 triangle with 33 at its heart</li>
+<li>Wings: dragon-wing ground projection, 3 modes, both sides matching</li>
+<li>Tires: solid, light channel inside the ring</li>
+<li>Spikes: outer extremities only — rider zone, grips, pegs and controls stay clean</li>
+</ul>
+<p class="buy"><a href="https://buy.stripe.com/eVq8wIgt3bBPcsbeXG0Ba0i"><strong>BUY THE MAD DEAD GOD SUPERBIKE — $12,000</strong></a></p>
+</details>
+<details class="item">
+<summary><strong>Ascension33 Superbike A33-S100 — full-fairing racer — 10000W — $9,000</strong> &middot; CUSTOM ORDER &middot; tap to expand</summary>
+<img src="img/bike-superbike-spiked-v3.webp" alt="Ascension33 superbike — lit 33 tank, solid lit tires">
+<p>The full-fairing racing machine under the Mad Dead God: 10000W, the lit 33 on the tank, dragon wings on the road, solid lit tires. Final quote per build; deposit first.</p>
+<ul class="specs">
+<li>Motor: 10000W class</li>
+<li>Fairing: full racing fairing</li>
+<li>Tank: lit Ascension33 triangle</li>
+<li>Wings: dragon-wing projection, 3 modes</li>
+<li>Tires: solid, light inside the ring</li>
+</ul>
+<p class="buy"><a href="https://buy.stripe.com/7sY9AMb8J8pD9fZ8zi0Ba0h"><strong>BUY THE A33-S100 SUPERBIKE — $9,000</strong></a></p>
+</details>
+<details class="item">
+<summary><strong>Pirgitori Cruiser PG-C30 — fat tire — 3000W — $6,000</strong> &middot; CUSTOM ORDER &middot; tap to expand</summary>
+<img src="img/bike-cruiser-spiked-v3.webp" alt="Pirgitori cruiser — fat tire, lit compartments">
+<p>The fat-tire cruiser: 3000W, 60V, double suspension and disc brakes, with burgundy and gold carried on the rear compartments. Final quote per build; deposit first.</p>
+<ul class="specs">
+<li>Motor: 3000W · 60V</li>
+<li>Frame: fat tire, double suspension</li>
+<li>Brakes: disc</li>
+<li>Compartments: burgundy + gold rear compartments, lit</li>
+<li>Tires: solid, light inside the ring</li>
+</ul>
+<p class="buy"><a href="https://buy.stripe.com/3cIeV60u56hv1Nxg1K0Ba0g"><strong>BUY THE PG-C30 CRUISER — $6,000</strong></a></p>
+</details>
+<details class="item">
+<summary><strong>Pirgitori Wide-Tire PG-W80 — 3000W–8000W — $5,000</strong> &middot; CUSTOM ORDER &middot; tap to expand</summary>
+<img src="img/poster-machines.webp" alt="The machines line — wide-tire among them">
+<p>The wide-tire build with a removable lithium battery — pick your power from 3000W to 8000W and we build it on the wide frame. Final quote per build; deposit first.</p>
+<ul class="specs">
+<li>Motor: 3000W–8000W, your pick</li>
+<li>Battery: removable lithium</li>
+<li>Frame: wide-tire</li>
+<li>Lighting: full house lighting program</li>
+</ul>
+<p class="buy"><a href="https://buy.stripe.com/fZu7sEa4FgW9dwf9Dm0Ba0l"><strong>BUY THE PG-W80 WIDE-TIRE — $5,000</strong></a></p>
+</details>
+<details class="item">
+<summary><strong>Pirgitori Dual-Purpose PG-D30 — adventure class — 3000W — $4,000</strong> &middot; CUSTOM ORDER &middot; tap to expand</summary>
+<img src="img/bike-dualpurpose-spiked-v2.webp" alt="Pirgitori dual-purpose — street and dirt, lit compartments">
+<p>The 72V dual-sport: street and dirt on one machine, 3000W class, with burgundy and gold on the dual-purpose rear compartments. Final quote per build; deposit first.</p>
+<ul class="specs">
+<li>Motor: 3000W class · 72V</li>
+<li>Use: street and dirt</li>
+<li>Compartments: burgundy + gold, lit</li>
+<li>Tires: solid, light inside the ring</li>
+</ul>
+<p class="buy"><a href="https://buy.stripe.com/dRm6oAccN21fgIr02M0Ba0j"><strong>BUY THE PG-D30 DUAL-PURPOSE — $4,000</strong></a></p>
+</details>
+<details class="item">
+<summary><strong>Pirgitori Custom PG-X50 — built to order — $3,000</strong> &middot; CUSTOM ORDER &middot; tap to expand</summary>
+<img src="img/poster-machines.webp" alt="The machines line — the custom build among them">
+<p>The entry machine, built entirely to order: 2000W to 5000W, 72V, your colors, your marks. Final quote per build; deposit first.</p>
+<ul class="specs">
+<li>Motor: 2000W–5000W, your pick · 72V</li>
+<li>Colors and marks: yours</li>
+<li>Lighting: full house lighting program</li>
+</ul>
+<p class="buy"><a href="https://buy.stripe.com/8x2dR25OpeO12RB8zi0Ba0k"><strong>BUY THE PG-X50 CUSTOM — $3,000</strong></a></p>
+</details>
 
 <p><em>Machines are custom imports: freight, duties and US road certification
 are confirmed per model before a sale. No machine is listed as road-legal
@@ -101,63 +208,182 @@ same editions, same lighting law, combustion power. The number is
 engine class in hundreds of cc. <strong>COMING SOON</strong> — the gas
 line opens when our manufacturing partnership is signed. No orders, no
 deposits until then.</em></p>
-
-<p><strong>Ascension33 Superbike A33-S10-MDG&sup2; — 1000cc class</strong> &middot; COMING SOON<br>
-The gas flagship: full-fairing liter-class racer, lit 33 triangle on the tank, dragon wings, solid lit tires</p>
-
-<p><strong>Pirgitori Cruiser PG-C18-MDG&sup2; — 1800cc class</strong> &middot; COMING SOON<br>
-Big-twin class fat-tire cruiser, burgundy and gold compartments</p>
-
-<p><strong>Pirgitori Dual-Purpose PG-D9-MDG&sup2; — 900cc class</strong> &middot; COMING SOON<br>
-Adventure class, street and dirt</p>
-
-<p><strong>Pirgitori Custom PG-X5-MDG&sup2; — 500cc class</strong> &middot; COMING SOON<br>
-The entry gas build — your colors, your marks</p>
+<details class="item">
+<summary><strong>Ascension33 Superbike A33-S10-MDG&sup2; — 1000cc class</strong> &middot; COMING SOON &middot; tap to expand</summary>
+<img src="img/bike-superbike-madgod-v4.webp" alt="Mad Dead God design language — the gas flagship follows it">
+<p>The gas flagship: a full-fairing liter-class racer carrying the Mad Dead God program — lit 33 triangle on the tank, dragon wings, solid lit tires. Design language pictured; the gas machine itself arrives with the partnership.</p>
+<ul class="specs">
+<li>Engine class: 1000cc</li>
+<li>Fairing: full, Mad Dead God program</li>
+<li>Status: COMING SOON — no orders or deposits</li>
+</ul>
+</details>
+<details class="item">
+<summary><strong>Pirgitori Cruiser PG-C18-MDG&sup2; — 1800cc class</strong> &middot; COMING SOON &middot; tap to expand</summary>
+<img src="img/bike-cruiser-spiked-v3.webp" alt="Cruiser design language — burgundy and gold compartments">
+<p>Big-twin class fat-tire cruiser, burgundy and gold compartments, the full lighting law on combustion power.</p>
+<ul class="specs">
+<li>Engine class: 1800cc</li>
+<li>Frame: fat tire cruiser</li>
+<li>Status: COMING SOON — no orders or deposits</li>
+</ul>
+</details>
+<details class="item">
+<summary><strong>Pirgitori Dual-Purpose PG-D9-MDG&sup2; — 900cc class</strong> &middot; COMING SOON &middot; tap to expand</summary>
+<img src="img/bike-dualpurpose-spiked-v2.webp" alt="Dual-purpose design language — street and dirt">
+<p>Adventure class, street and dirt, in the Mad Dead God gas program.</p>
+<ul class="specs">
+<li>Engine class: 900cc</li>
+<li>Use: street and dirt</li>
+<li>Status: COMING SOON — no orders or deposits</li>
+</ul>
+</details>
+<details class="item">
+<summary><strong>Pirgitori Custom PG-X5-MDG&sup2; — 500cc class</strong> &middot; COMING SOON &middot; tap to expand</summary>
+<p>The entry gas build — your colors, your marks, built under the partnership program.</p>
+<ul class="specs">
+<li>Engine class: 500cc</li>
+<li>Colors and marks: yours</li>
+<li>Status: COMING SOON — no orders or deposits</li>
+</ul>
+</details>
 
 <h3>SCOOTERS — THE PIRGITORI SCOOTER LINE</h3>
 
-<p><strong>Pirgitori Stepper PG-T60 — 6000W dual drive — $1,188</strong> &middot; CUSTOM ORDER<br>
-60V 40Ah, dual motor, 85km/h class, foldable aluminum frame</p>
-
-<p><strong>Ascension33 Q06 Pro A33-T56 — 5600W dual motor — $1,088</strong> &middot; CUSTOM ORDER<br>
-60V 27Ah, 80km/h class, 11&Prime; off-road tires, US/EU warehouse stock, logo customization</p>
-
-<p><strong>Pirgitori Citycoco PG-T30 — fat tire chopper scooter — $941</strong> &middot; CUSTOM ORDER<br>
-3000W, fat wheels, cruiser stance</p>
-
-<p><strong>Pirgitori M4Max PG-T10 — foldable, with seat — $519</strong> &middot; CUSTOM ORDER<br>
-48V, customized logo, US/EU warehouse stock</p>
+<p><img src="img/scooter-v3.webp" alt="Pirgitori scooter — downward triangle, lit" style="max-width:640px;"></p>
+<details class="item">
+<summary><strong>Pirgitori Stepper PG-T60 — 6000W dual drive — $1,188</strong> &middot; CUSTOM ORDER &middot; tap to expand</summary>
+<p>The top of the scooter line: dual-drive 6000W on a foldable aluminum frame, 85km/h class, built for real distance.</p>
+<ul class="specs">
+<li>Drive: dual motor, 6000W total</li>
+<li>Battery: 60V 40Ah</li>
+<li>Class: 85km/h</li>
+<li>Frame: foldable aluminum</li>
+</ul>
+<p class="buy"><a href="https://buy.stripe.com/cNieV690B35j8bVdTC0Ba0m"><strong>BUY THE PG-T60 STEPPER — $1,188</strong></a></p>
+</details>
+<details class="item">
+<summary><strong>Ascension33 Q06 Pro A33-T56 — 5600W dual motor — $1,088</strong> &middot; CUSTOM ORDER &middot; tap to expand</summary>
+<p>Dual-motor 5600W on 11-inch off-road tires, US/EU warehouse stock, with the full logo customization program.</p>
+<ul class="specs">
+<li>Drive: dual motor, 5600W total</li>
+<li>Battery: 60V 27Ah</li>
+<li>Class: 80km/h</li>
+<li>Tires: 11in off-road</li>
+<li>Stock: US/EU warehouses</li>
+</ul>
+<p class="buy"><a href="https://buy.stripe.com/14A8wI5Op49n3VFcPy0Ba0n"><strong>BUY THE A33-T56 Q06 PRO — $1,088</strong></a></p>
+</details>
+<details class="item">
+<summary><strong>Pirgitori Citycoco PG-T30 — fat tire chopper scooter — $941</strong> &middot; CUSTOM ORDER &middot; tap to expand</summary>
+<p>The chopper scooter: 3000W, fat wheels, cruiser stance — a Citycoco with the Pirgitori marks and lighting.</p>
+<ul class="specs">
+<li>Motor: 3000W</li>
+<li>Wheels: fat tire</li>
+<li>Stance: chopper/cruiser</li>
+</ul>
+<p class="buy"><a href="https://buy.stripe.com/6oUfZab8J7lz4ZJ5n60Ba0o"><strong>BUY THE PG-T30 CITYCOCO — $941</strong></a></p>
+</details>
+<details class="item">
+<summary><strong>Pirgitori M4Max PG-T10 — foldable, with seat — $519</strong> &middot; CUSTOM ORDER &middot; tap to expand</summary>
+<p>The folder: 48V, a real seat, customized logo, US/EU warehouse stock. The everyday machine of the line.</p>
+<ul class="specs">
+<li>Battery: 48V</li>
+<li>Seat: fitted</li>
+<li>Frame: foldable</li>
+<li>Stock: US/EU warehouses</li>
+</ul>
+<p class="buy"><a href="https://buy.stripe.com/4gMdR290BcFTeAjg1K0Ba0p"><strong>BUY THE PG-T10 M4MAX — $519</strong></a></p>
+</details>
 
 <h3>RIDE TECH — DIGITAL HELMETS</h3>
 
 <p><img src="img/helmet-gen2-hud.webp" alt="Pirgitori Helmet Gen 2 — HUD visor design" style="max-width:100%;"></p>
-
-<p><strong>Pirgitori Helmet GEN 2 — "THE VISOR" — IN DESIGN</strong><br>
-Our own HUD helmet, designed in-house: waveguide visor display (speed arc,
-navigation arrow, rear-view camera inset), a swappable magenta core pod,
-mesh intercom with Lacey's voice, crash detection and SOS. Built on the
-certified Gen 1 shell line. Not for sale yet — the design is published
-here because the build path is real: Gen 1 funds it, the prototype
-follows. Full design: ask for GEN2-HUD-HELMET-DESIGN.</p>
-
-<p><strong>Pirgitori Vision Helmet — built-in camera — $363</strong> &middot; CUSTOM ORDER<br>
-Smart helmet with integrated camera</p>
-
-<p><strong>Pirgitori Ride Helmet — DOT class, Bluetooth intercom — $96</strong> &middot; CUSTOM ORDER<br>
-Full-face, 1000M 6-rider intercom, FM radio</p>
-
-<p><strong>Pirgitori Smart Helmet — Bluetooth + 1080P camera — $55</strong> &middot; CUSTOM ORDER</p>
+<details class="item">
+<summary><strong>Pirgitori Helmet GEN 2 — "THE VISOR"</strong> &middot; IN DESIGN &middot; tap to expand</summary>
+<img src="img/smart-visor-v1.webp" alt="Smart visor — live translation on the lens">
+<p>Our own HUD helmet, designed in-house: waveguide visor display (speed arc, navigation arrow, rear-view camera inset), a swappable magenta core pod, mesh intercom with Lacey's voice, crash detection and SOS — and the smart-visor program: real-time translation in all languages on the lens. Built on the certified Gen 1 shell line; the electronics never pierce the certified shell. Not for sale yet — Gen 1 funds it, the prototype follows, and no unit sells until its translation is verified on real hardware.</p>
+<ul class="specs">
+<li>Display: waveguide HUD — speed arc, nav arrow, rear-view inset</li>
+<li>Core pod: swappable, magenta</li>
+<li>Intercom: mesh, Lacey's voice</li>
+<li>Safety: crash detection + SOS</li>
+<li>Translation: all languages, on the lens</li>
+<li>Status: IN DESIGN — not for sale</li>
+</ul>
+</details>
+<details class="item">
+<summary><strong>Pirgitori Vision Helmet — built-in camera — $363</strong> &middot; CUSTOM ORDER &middot; tap to expand</summary>
+<img src="img/helmet-gen1-v1.webp" alt="Pirgitori Gen 1 helmet — house colors">
+<p>The smart helmet with an integrated camera — your ride, recorded from the helmet's own eye, in the house colors with the marks lit.</p>
+<ul class="specs">
+<li>Camera: integrated</li>
+<li>Shell: Gen 1 certified line</li>
+<li>Editions: Pirgitori · Ascension33 · Mad Dead God</li>
+</ul>
+<p class="buy"><a href="https://buy.stripe.com/9B600c6St7lzfEn3eY0Ba0q"><strong>BUY THE VISION HELMET — $363</strong></a></p>
+</details>
+<details class="item">
+<summary><strong>Pirgitori Ride Helmet — DOT class, Bluetooth intercom — $96</strong> &middot; CUSTOM ORDER &middot; tap to expand</summary>
+<img src="img/helmet-gen1-spiked-v3.webp" alt="Gen 1 helmet, spiked trim — short crown spikes with the light at the tip">
+<p>Full-face, with a 1000M 6-rider Bluetooth intercom and FM radio. The spiked trim is short crown studs with the light burning at the very tip — clear of the visor, the vents and the chin bar, always.</p>
+<ul class="specs">
+<li>Type: full-face</li>
+<li>Intercom: Bluetooth, 1000M, 6 riders</li>
+<li>Radio: FM</li>
+<li>Spikes: short breakaway crown studs, light at the tip</li>
+<li>Editions: Pirgitori · Ascension33 · Mad Dead God</li>
+</ul>
+<p class="buy"><a href="https://buy.stripe.com/cNidR2gt321f8bV3eY0Ba0r"><strong>BUY THE RIDE HELMET — $96</strong></a></p>
+</details>
+<details class="item">
+<summary><strong>Pirgitori Smart Helmet — Bluetooth + 1080P camera — $55</strong> &middot; CUSTOM ORDER &middot; tap to expand</summary>
+<img src="img/helmet-madgod-v3.webp" alt="Mad Dead God helmet — both symbols, spike-tipped crown lights">
+<p>Bluetooth and a 1080P camera in the entry smart helmet. Pictured in its Mad Dead God edition: both symbols lit, crown spikes with the light at the tip.</p>
+<ul class="specs">
+<li>Camera: 1080P</li>
+<li>Audio: Bluetooth</li>
+<li>Editions: Pirgitori · Ascension33 · Mad Dead God</li>
+</ul>
+<p class="buy"><a href="https://buy.stripe.com/7sY8wIfoZfS577R9Dm0Ba0s"><strong>BUY THE SMART HELMET — $55</strong></a></p>
+</details>
+<details class="item">
+<summary><strong>MAD DEAD GOD HELMET — the lit-strand options</strong> &middot; EDITION OPTIONS &middot; tap to expand</summary>
+<img src="img/helmet-madgod-tentacles-v3.webp" alt="Mad Dead God helmet — lit tentacles">
+<p>The flagship helmet's signature options: flexible light-fiber strands in burgundy and gold on a breakaway mount at the rear crown — soft, never rigid, never near the visor, vents or chin bar. Three variants: tentacles only, dreadlocks only, or both together. The strands are an option on the Mad Dead God edition of any Gen 1 helmet above.</p>
+<ul class="specs">
+<li>Strands: light-fiber, burgundy + gold</li>
+<li>Mount: breakaway, rear crown</li>
+<li>Variants: tentacles · dreadlocks · both together</li>
+</ul>
+<img src="img/helmet-madgod-dreadlocks-v2.webp" alt="Mad Dead God helmet — lit dreadlocks"><img src="img/helmet-madgod-tentacles-dreads-v2.webp" alt="Mad Dead God helmet — tentacles and dreadlocks together">
+</details>
 
 <p><em>Helmet safety claims are verified before sale: a helmet is only sold
 as DOT-certified with the certificate to prove it.</em></p>
 
 <h3>EYES — DRONES</h3>
-
-<p><strong>Ascension33 Black Hawk Drone — prosumer — $617</strong> &middot; CUSTOM ORDER<br>
-Your logo, shell color, app, packaging and firmware, built to order</p>
-
-<p><strong>Pirgitori Scout Drone — foldable 4K — $41</strong> &middot; CUSTOM ORDER<br>
-Foldable drone, dual camera, full logo and packaging program</p>
+<details class="item">
+<summary><strong>Ascension33 Black Hawk Drone — prosumer — $617</strong> &middot; CUSTOM ORDER &middot; tap to expand</summary>
+<img src="img/drone-v1.webp" alt="Ascension33 drone — house colors">
+<p>The prosumer bird, built to order: your logo, shell color, app, packaging and firmware, all carrying the house program.</p>
+<ul class="specs">
+<li>Class: prosumer</li>
+<li>Customization: logo, shell color, app, packaging, firmware</li>
+<li>Editions: Pirgitori · Ascension33 · Mad Dead God</li>
+</ul>
+<p class="buy"><a href="https://buy.stripe.com/28EaEQ5OpcFTbo7dTC0Ba0t"><strong>BUY THE BLACK HAWK — $617</strong></a></p>
+</details>
+<details class="item">
+<summary><strong>Pirgitori Scout Drone — foldable 4K — $41</strong> &middot; CUSTOM ORDER &middot; tap to expand</summary>
+<p>The foldable scout: dual camera, 4K class, with the full logo and packaging program. The everyday eye of the line.</p>
+<ul class="specs">
+<li>Camera: dual, 4K class</li>
+<li>Frame: foldable</li>
+<li>Customization: full logo and packaging program</li>
+</ul>
+<p class="buy"><a href="https://buy.stripe.com/aFadR290BbBP8bV2aU0Ba0u"><strong>BUY THE SCOUT DRONE — $41</strong></a></p>
+</details>
 
 <p><em>Fly legal: drones over 250g require FAA registration, and Remote ID
 rules apply. Weight class is confirmed on the sample unit before sale.</em></p>
@@ -165,56 +391,242 @@ rules apply. Weight class is confirmed on the sample unit before sale.</em></p>
 <h3>NEXT-LEVEL TECH — PHONES, TABLETS, VR</h3>
 
 <p><img src="img/poster-tech.webp" alt="Rig laptop, flagship phone, Slate Pro tablet and VR headset in house colors" style="max-width:100%;"></p>
-
-<p><strong>Ascension33 VR Headset — pancake 4K, custom logo from 1 unit — $1,306</strong> &middot; CUSTOM ORDER<br>
-All-in-one, pancake optics, ~250g &middot; logo, packaging and graphics customized from a single unit</p>
-
-<p><strong>Pirgitori Slate Pro — 12.3&Prime; 144Hz 3K OLED tablet — $1,600</strong> &middot; CUSTOM ORDER<br>
-12GB RAM / 256GB &middot; flagship price set by the house</p>
-
-<p><strong>Pirgitori Flagship Phone — Snapdragon 8 Gen 3 class — $1,300</strong> &middot; CUSTOM ORDER<br>
-16GB RAM, 1TB storage, 120Hz OLED, 108MP camera, full logo and packaging program &middot; flagship price set by the house</p>
-
-<p><strong>Pirgitori VR Glasses — 4K — $910</strong> &middot; CUSTOM ORDER<br>
-4K VR glasses, custom logo program</p>
-
-<p><strong>Pirgitori Slate — 11&Prime; 120Hz class tablet — $130</strong> &middot; CUSTOM ORDER<br>
-Gaming-tablet class, custom logo program</p>
+<details class="item">
+<summary><strong>Ascension33 VR Headset — pancake 4K — $1,306</strong> &middot; CUSTOM ORDER &middot; tap to expand</summary>
+<img src="img/tech-vr.webp" alt="Ascension33 VR headset — pancake 4K">
+<p>All-in-one VR with pancake optics at roughly 250 grams — logo, packaging and graphics customized from a single unit.</p>
+<ul class="specs">
+<li>Display: 4K class, pancake optics</li>
+<li>Weight: ~250g</li>
+<li>Form: all-in-one</li>
+<li>Customization: from 1 unit</li>
+<li>Editions: Pirgitori · Ascension33 · Mad Dead God</li>
+</ul>
+<p class="buy"><a href="https://buy.stripe.com/cNi00cdgR35jbo7cPy0Ba0v"><strong>BUY THE VR HEADSET — $1,306</strong></a></p>
+</details>
+<details class="item">
+<summary><strong>Pirgitori Slate Pro — 12.3in 144Hz 3K OLED tablet — $1,600</strong> &middot; CUSTOM ORDER &middot; tap to expand</summary>
+<img src="img/tech-tablet.webp" alt="Pirgitori Slate Pro tablet">
+<p>The big slate: a 12.3-inch 3K OLED at 144Hz with 12GB of RAM and 256GB of storage, carrying the marks. The spiked edition guards the corners only — edges, hinges and ports stay clean.</p>
+<ul class="specs">
+<li>Display: 12.3in 3K OLED, 144Hz</li>
+<li>Memory: 12GB RAM / 256GB</li>
+<li>Editions: Pirgitori · Ascension33 · Mad Dead God</li>
+</ul>
+<div class="editions"><img src="img/tech-tablet-spiked-v2.webp" alt="Slate Pro, spiked edition — corner guards only"></div>
+<p class="buy"><a href="https://buy.stripe.com/aFa7sE5OpbBP9fZcPy0Ba0w"><strong>BUY THE SLATE PRO — $1,600</strong></a></p>
+</details>
+<details class="item">
+<summary><strong>Pirgitori Flagship Phone — Snapdragon 8 Gen 3 class — $1,300</strong> &middot; CUSTOM ORDER &middot; tap to expand</summary>
+<img src="img/tech-phone.webp" alt="Pirgitori flagship phone">
+<p>16GB of RAM, a full terabyte of storage, a 120Hz OLED and a 108MP camera, with the full logo and packaging program. Batch-built; the sample is benchmarked before the batch opens.</p>
+<ul class="specs">
+<li>Chip class: Snapdragon 8 Gen 3</li>
+<li>Memory: 16GB RAM / 1TB</li>
+<li>Display: 120Hz OLED</li>
+<li>Camera: 108MP</li>
+<li>Editions: Pirgitori · Ascension33 · Mad Dead God</li>
+</ul>
+<div class="editions"><img src="img/tech-phone-spiked-v2.webp" alt="Flagship phone, spiked edition — corner guards only"></div>
+<p class="buy"><a href="https://buy.stripe.com/eVqaEQb8J7lz63N8zi0Ba0x"><strong>BUY THE FLAGSHIP PHONE — $1,300</strong></a></p>
+</details>
+<details class="item">
+<summary><strong>Pirgitori VR Glasses — 4K — $910</strong> &middot; CUSTOM ORDER &middot; tap to expand</summary>
+<p>4K VR glasses with the custom logo program — the lighter way into the world.</p>
+<ul class="specs">
+<li>Display: 4K class</li>
+<li>Customization: custom logo program</li>
+<li>Editions: Pirgitori · Ascension33 · Mad Dead God</li>
+</ul>
+<p class="buy"><a href="https://buy.stripe.com/fZu8wI5Op21f1Nx5n60Ba0y"><strong>BUY THE VR GLASSES — $910</strong></a></p>
+</details>
+<details class="item">
+<summary><strong>Pirgitori Slate — 11in 120Hz class tablet — $130</strong> &middot; CUSTOM ORDER &middot; tap to expand</summary>
+<p>The gaming-tablet class slate with the custom logo program — the entry tablet of the line.</p>
+<ul class="specs">
+<li>Display: 11in, 120Hz class</li>
+<li>Customization: custom logo program</li>
+<li>Editions: Pirgitori · Ascension33 · Mad Dead God</li>
+</ul>
+<p class="buy"><a href="https://buy.stripe.com/aFa00c2Cd0XbgIr02M0Ba0z"><strong>BUY THE SLATE — $130</strong></a></p>
+</details>
 
 <p><em>Next-level rule: the sample is the spec sheet. Phone and tablet
 listings in this class routinely overstate RAM and storage — the first
 unit of every model is benchmarked here, and the listing sells only what
 the sample proves.</em></p>
 
+<h3>THE NEW LINES — LEATHER, CASHMERE, JEWELRY, OPTICS</h3>
+
+<p><em>Every new line comes in all three editions. Priced per piece —
+ask, and the piece is quoted before it is made.</em></p>
+<details class="item">
+<summary><strong>Cashmere Turtleneck Sweater</strong> &middot; CUSTOM ORDER &middot; tap to expand</summary>
+<img src="img/clothing-turtleneck-v1.webp" alt="Cashmere turtleneck — house colors, lit mark">
+<p>A true cashmere turtleneck carrying the mark — the quiet piece of the line, built to be worn for years.</p>
+<ul class="specs">
+<li>Material: cashmere</li>
+<li>Style: turtleneck</li>
+<li>Editions: Pirgitori · Ascension33 · Mad Dead God</li>
+</ul>
+</details>
+<details class="item">
+<summary><strong>Leather Jacket</strong> &middot; CUSTOM ORDER &middot; tap to expand</summary>
+<img src="img/clothing-leather-jacket-v1.webp" alt="Leather jacket — house colors">
+<p>Full leather, cut for riding and for the street, marks applied to the build.</p>
+<ul class="specs">
+<li>Material: leather</li>
+<li>Editions: Pirgitori · Ascension33 · Mad Dead God</li>
+</ul>
+</details>
+<details class="item">
+<summary><strong>Leather Gloves</strong> &middot; CUSTOM ORDER &middot; tap to expand</summary>
+<img src="img/clothing-gloves-v1.webp" alt="Leather gloves — house colors">
+<p>Full leather riding gloves — grip surfaces stay clean by law; the marks ride where they never interfere.</p>
+<ul class="specs">
+<li>Material: leather</li>
+<li>Fit: riding</li>
+<li>Editions: Pirgitori · Ascension33 · Mad Dead God</li>
+</ul>
+</details>
+<details class="item">
+<summary><strong>Leather Boots</strong> &middot; CUSTOM ORDER &middot; tap to expand</summary>
+<img src="img/clothing-boots-v1.webp" alt="Leather boots — the marks on the pair">
+<p>Full leather boots, built to be ridden in and walked in, both symbols available across the pair.</p>
+<ul class="specs">
+<li>Material: leather</li>
+<li>Editions: Pirgitori · Ascension33 · Mad Dead God</li>
+</ul>
+</details>
+<details class="item">
+<summary><strong>Full Leather Riding Suit</strong> &middot; CUSTOM ORDER &middot; tap to expand</summary>
+<img src="img/clothing-riding-suit-v1.webp" alt="Full leather riding suit — house colors">
+<p>The complete suit: full leather, full marks, built for the rider who wears the world.</p>
+<ul class="specs">
+<li>Material: full leather</li>
+<li>Coverage: full suit</li>
+<li>Editions: Pirgitori · Ascension33 · Mad Dead God</li>
+</ul>
+</details>
+<details class="item">
+<summary><strong>Metal Pen with Stylus</strong> &middot; CUSTOM ORDER &middot; tap to expand</summary>
+<img src="img/pen-stylus-v1.webp" alt="Metal pen with stylus — solid metal body">
+<p>A solid-metal pen with a working stylus tip — weight in the hand, the mark on the barrel. Nothing plated, nothing hollow-feeling.</p>
+<ul class="specs">
+<li>Body: solid metal</li>
+<li>Tip: pen + stylus</li>
+<li>Editions: Pirgitori · Ascension33 · Mad Dead God</li>
+</ul>
+</details>
+<details class="item">
+<summary><strong>Jewelry — solid metal, lab stones only</strong> &middot; CUSTOM ORDER &middot; tap to expand</summary>
+<img src="img/jewelry-ring-v1.webp" alt="Solid gold ring — moissanite center, lab-grown diamond sides">
+<p>The jewelry law is absolute: NOTHING plated — solid metals only — and the only stones are lab-grown diamonds and moissanites, named plainly with their specs on every piece. Pictured: solid gold, a moissanite center with its rainbow fire, two lab-grown diamonds at its sides.</p>
+<ul class="specs">
+<li>Metals: solid only — no plate, no vermeil, no fill</li>
+<li>Stones: lab-grown diamonds and moissanites only, specs stated plainly</li>
+<li>Editions: Pirgitori · Ascension33 · Mad Dead God</li>
+</ul>
+</details>
+<details class="item">
+<summary><strong>Smart Lenses &amp; Visors — all-language translation</strong> &middot; IN VERIFICATION &middot; tap to expand</summary>
+<img src="img/smart-visor-v1.webp" alt="Smart visor — translation rendered on the lens">
+<p>Fully functional smart lenses and visors with real-time translation in ALL languages — the headline of the optics line. Pictured: the visor rendering a live translation on the lens under the 33. No unit sells until a real one's translation is verified on hardware.</p>
+<ul class="specs">
+<li>Translation: all languages, real-time</li>
+<li>Status: IN VERIFICATION — no sale until hardware-verified</li>
+</ul>
+</details>
+
 <h3>ARMOR — CLOTHING WITH THE MARKS</h3>
-
-<p><strong>Ascension33 / Pirgitori Hooded Sweatshirt — $78</strong> &middot; STOCK &amp; SHIP<br>
-50/50 hooded sweatshirt, screen print</p>
-
-<p><strong>Ascension33 / Pirgitori Logo T-Shirt — $34</strong> &middot; STOCK &amp; SHIP<br>
-Softstyle tee, screen print &middot; free artwork proof before production</p>
-
-<p><strong>Custom Logo Cotton T-Shirt — $34</strong> &middot; CUSTOM ORDER</p>
-
-<p><strong>Custom Embossed-Logo Hoodie — $33</strong> &middot; CUSTOM ORDER<br>
-Puff/embossed Pirgitori mark</p>
+<details class="item">
+<summary><strong>Ascension33 / Pirgitori Hooded Sweatshirt — $78</strong> &middot; STOCK & SHIP &middot; tap to expand</summary>
+<img src="img/clothing-hoodie-v1.webp" alt="Hooded sweatshirt with the marks">
+<p>The 50/50 hooded sweatshirt, screen printed with the marks — branded in small batches and shipped by us.</p>
+<ul class="specs">
+<li>Fabric: 50/50 blend</li>
+<li>Print: screen print</li>
+<li>Editions: Pirgitori · Ascension33</li>
+</ul>
+<p class="buy"><a href="https://buy.stripe.com/9B6aEQ4Kl49n63NdTC0Ba0A"><strong>BUY THE HOODIE — $78</strong></a></p>
+</details>
+<details class="item">
+<summary><strong>Ascension33 / Pirgitori Logo T-Shirt — $34</strong> &middot; STOCK & SHIP &middot; tap to expand</summary>
+<p>The Softstyle tee, screen printed — free artwork proof before production.</p>
+<ul class="specs">
+<li>Fabric: Softstyle</li>
+<li>Print: screen print, free proof first</li>
+</ul>
+<p class="buy"><a href="https://buy.stripe.com/7sY00c2Cd0Xb77RbLu0Ba0B"><strong>BUY THE LOGO TEE — $34</strong></a></p>
+</details>
+<details class="item">
+<summary><strong>Custom Logo Cotton T-Shirt — $34</strong> &middot; CUSTOM ORDER &middot; tap to expand</summary>
+<p>Your logo on cotton, made to order alongside ours.</p>
+<ul class="specs">
+<li>Fabric: cotton</li>
+<li>Print: your logo, to order</li>
+</ul>
+<p class="buy"><a href="https://buy.stripe.com/4gMeV60u535jgIrg1K0Ba0C"><strong>BUY THE CUSTOM TEE — $34</strong></a></p>
+</details>
+<details class="item">
+<summary><strong>Custom Embossed-Logo Hoodie — $33</strong> &middot; CUSTOM ORDER &middot; tap to expand</summary>
+<p>The hoodie with the Pirgitori mark in puff/embossed print — the mark you can feel.</p>
+<ul class="specs">
+<li>Print: puff/embossed</li>
+<li>Mark: Pirgitori</li>
+</ul>
+<p class="buy"><a href="https://buy.stripe.com/eVqfZa5Op9tH77R2aU0Ba0D"><strong>BUY THE EMBOSSED HOODIE — $33</strong></a></p>
+</details>
 
 <h3>RIGS — LAPTOPS WITH THE MARKS LASERED ON</h3>
-
-<p><strong>Pirgitori Rig FLAGSHIP — Core i7, 1TB — $3,400</strong> &middot; DROPSHIP CANDIDATE<br>
-15.6&Prime;, i7-1165G7 class, 16GB RAM, 1TB SSD &middot; your logo laser-engraved on the lid &middot;
-flagship price set by the house &middot; <strong>ships with the Ascension33 game
-and the Pirgitori companion app preinstalled</strong><br>
-<a href="https://buy.stripe.com/aFa4gsfoZcFTeAjaHq0Ba0a"><strong>BUY THE FLAGSHIP — $3,400</strong></a></p>
-
-<p><strong>Pirgitori Rig — AMD Ryzen 9, 1TB — $1,310</strong> &middot; CUSTOM ORDER<br>
-R9 6900HX, 32GB DDR5, 1TB SSD</p>
-
-<p><strong>Pirgitori Rig — AMD Ryzen 7, 1TB — $972</strong> &middot; CUSTOM ORDER<br>
-15.6&Prime; gaming laptop, RTX graphics, 16GB/1TB SSD, custom logo</p>
-
-<p><strong>Pirgitori Rig — AMD Ryzen 7 4700U, 1TB — $928</strong> &middot; DROPSHIP CANDIDATE<br>
-15.6&Prime; ultra-slim</p>
+<details class="item">
+<summary><strong>Pirgitori Rig FLAGSHIP — Core i7, 1TB — $3,400</strong> &middot; DROPSHIP CANDIDATE &middot; tap to expand</summary>
+<img src="img/tech-laptop.webp" alt="Flagship rig — lasered lid">
+<p>15.6 inches, i7 class, 16GB of RAM and a full terabyte SSD, your logo laser-engraved on the lid — and it ships with the Ascension33 game and the Pirgitori companion app preinstalled. The Mad Dead God edition carries both symbols lit on the lid, corner guards only, hinges and ports clean.</p>
+<ul class="specs">
+<li>Display: 15.6in</li>
+<li>Chip: Core i7 class (i7-1165G7)</li>
+<li>Memory: 16GB RAM / 1TB SSD</li>
+<li>Lid: logo laser-engraved</li>
+<li>Preinstalled: Ascension33 game + companion app</li>
+<li>Editions: Pirgitori · Ascension33 · Mad Dead God</li>
+</ul>
+<div class="editions"><img src="img/tech-laptop-madgod-v2.webp" alt="Flagship rig, Mad Dead God edition — both symbols lit on the lid"><img src="img/tech-laptop-spiked-v2.webp" alt="Flagship rig, spiked trim — corner guards only"></div>
+<p class="buy"><a href="https://buy.stripe.com/aFa4gsfoZcFTeAjaHq0Ba0a"><strong>BUY THE FLAGSHIP — $3,400</strong></a></p>
+</details>
+<details class="item">
+<summary><strong>Pirgitori Rig — AMD Ryzen 9, 1TB — $1,310</strong> &middot; CUSTOM ORDER &middot; tap to expand</summary>
+<img src="img/tech-laptop-spiked-v2.webp" alt="Ryzen rig — spiked trim, corner guards only">
+<p>The Ryzen 9 build: 6900HX class with 32GB of DDR5 and a terabyte SSD — the heavy lifter of the rig line.</p>
+<ul class="specs">
+<li>Chip: AMD Ryzen 9 (6900HX class)</li>
+<li>Memory: 32GB DDR5 / 1TB SSD</li>
+<li>Editions: Pirgitori · Ascension33 · Mad Dead God</li>
+</ul>
+<p class="buy"><a href="https://buy.stripe.com/14AaEQ5OpdJX3VF16Q0Ba0E"><strong>BUY THE RYZEN 9 RIG — $1,310</strong></a></p>
+</details>
+<details class="item">
+<summary><strong>Pirgitori Rig — AMD Ryzen 7, 1TB — $972</strong> &middot; CUSTOM ORDER &middot; tap to expand</summary>
+<p>The 15.6-inch gaming laptop: Ryzen 7, RTX graphics, 16GB and a terabyte SSD, custom logo on the lid.</p>
+<ul class="specs">
+<li>Display: 15.6in</li>
+<li>Chip: AMD Ryzen 7</li>
+<li>Graphics: RTX class</li>
+<li>Memory: 16GB / 1TB SSD</li>
+<li>Lid: custom logo</li>
+</ul>
+<p class="buy"><a href="https://buy.stripe.com/bJecMYgt36hvcsbdTC0Ba0F"><strong>BUY THE RYZEN 7 RIG — $972</strong></a></p>
+</details>
+<details class="item">
+<summary><strong>Pirgitori Rig — AMD Ryzen 7 4700U, 1TB — $928</strong> &middot; DROPSHIP CANDIDATE &middot; tap to expand</summary>
+<p>The ultra-slim: 15.6 inches, Ryzen 7 4700U, a terabyte SSD — the quiet machine that still carries the marks.</p>
+<ul class="specs">
+<li>Display: 15.6in ultra-slim</li>
+<li>Chip: AMD Ryzen 7 4700U</li>
+<li>Storage: 1TB SSD</li>
+</ul>
+<p class="buy"><a href="https://buy.stripe.com/4gM14gekVdJX77RdTC0Ba0G"><strong>BUY THE 4700U RIG — $928</strong></a></p>
+</details>
 
 <p><em>Every rig is sample-verified before it is sold: the first unit of any
 model is ordered, inspected and benchmarked here before the listing takes
@@ -222,28 +634,55 @@ orders. A listing marked DROPSHIP CANDIDATE goes live as dropship only after
 a test order lands and checks out.</em></p>
 
 <h3>GEAR — WEARABLES &amp; AUDIO WITH THE MARKS</h3>
+<details class="item">
+<summary><strong>Pirgitori Pulse Smartwatch — $76</strong> &middot; DROPSHIP CANDIDATE &middot; tap to expand</summary>
+<img src="img/watch-v1.webp" alt="Pirgitori Pulse smartwatch">
+<p>Custom logo, blood-oxygen and sleep monitoring, 5ATM waterproof — the pulse of the mesh on your wrist.</p>
+<ul class="specs">
+<li>Sensors: blood-oxygen, sleep</li>
+<li>Rating: 5ATM waterproof</li>
+<li>Logo: custom</li>
+</ul>
+<p class="buy"><a href="https://buy.stripe.com/7sY3cofoZbBPdwf8zi0Ba0H"><strong>BUY THE PULSE — $76</strong></a></p>
+</details>
+<details class="item">
+<summary><strong>Ascension33 ECG Smart Band — $74</strong> &middot; DROPSHIP CANDIDATE &middot; tap to expand</summary>
+<p>The ECG health band with a custom logo — the quiet tracker of the line.</p>
+<ul class="specs">
+<li>Sensor: ECG</li>
+<li>Logo: custom</li>
+</ul>
+<p class="buy"><a href="https://buy.stripe.com/9B614g6StaxLeAjbLu0Ba0I"><strong>BUY THE ECG BAND — $74</strong></a></p>
+</details>
+<details class="item">
+<summary><strong>Pirgitori Ultra AMOLED Smartwatch — $58</strong> &middot; DROPSHIP CANDIDATE &middot; tap to expand</summary>
+<p>AMOLED display in a custom logo box — the bright one.</p>
+<ul class="specs">
+<li>Display: AMOLED</li>
+<li>Packaging: custom logo box</li>
+</ul>
+<p class="buy"><a href="https://buy.stripe.com/28E5kw0u5fS5gIr3eY0Ba0J"><strong>BUY THE ULTRA AMOLED — $58</strong></a></p>
+</details>
+<details class="item">
+<summary><strong>Ascension33 Gaming Headset — Bluetooth, noise-cancelling — $32</strong> &middot; DROPSHIP CANDIDATE &middot; tap to expand</summary>
+<img src="img/headset-v1.webp" alt="Ascension33 gaming headset">
+<p>Bluetooth, noise-cancelling, custom logo program — hear the game the way the Spire hears it.</p>
+<ul class="specs">
+<li>Audio: Bluetooth, noise-cancelling</li>
+<li>Logo: custom program</li>
+</ul>
+<p class="buy"><a href="https://buy.stripe.com/eVqeV6foZfS5dwfeXG0Ba0K"><strong>BUY THE HEADSET — $32</strong></a></p>
+</details>
 
-<p><strong>Pirgitori Pulse Smartwatch — $76</strong> &middot; DROPSHIP CANDIDATE<br>
-Custom logo &middot; blood-oxygen and sleep monitoring, 5ATM waterproof</p>
-
-<p><strong>Ascension33 ECG Smart Band — $74</strong> &middot; DROPSHIP CANDIDATE<br>
-Custom logo, ECG health band</p>
-
-<p><strong>Pirgitori Ultra AMOLED Smartwatch — $58</strong> &middot; DROPSHIP CANDIDATE<br>
-AMOLED, custom logo box</p>
-
-<p><strong>Ascension33 Gaming Headset — Bluetooth, noise-cancelling — $32</strong> &middot; DROPSHIP CANDIDATE<br>
-Custom logo program</p>
-
-<h3>DIGITAL — THE GAME AND THE HALL</h3>
+<h3>DIGITAL — THE GAME AND THE https://buy.stripe.com/4gM28kfoZ0Xb2RBdTC0Ba0c</h3>
 
 <p><strong>Ascension33 — Full Game Download — $19.99</strong> &middot; DIGITAL<br>
 The complete package: the game, the companion app, and the Lacey mesh spark. Delivered by email after checkout.<br>
-<a href="https://buy.stripe.com/bJe4gs2CdeO1fEn6ra0Ba0b">BUY THE FULL GAME DOWNLOAD — $19.99</a></p>
+<a href="https://buy.stripe.com/bJe4gs2CdeO1fEn6ra0Ba0b"><strong>BUY THE FULL GAME DOWNLOAD — $19.99</strong></a></p>
 
 <p><strong>Hall of Shadows — Connection — $5.99/month</strong> &middot; SUBSCRIPTION<br>
 Connect and stay connected to the Hall of Shadows and the mesh. Renews monthly; cancel anytime.<br>
-<a href="https://buy.stripe.com/4gM28kfoZ0Xb2RBdTC0Ba0c">CONNECT TO THE HALL OF SHADOWS — $5.99/MONTH</a></p>
+<a href="https://buy.stripe.com/4gM28kfoZ0Xb2RBdTC0Ba0c"><strong>CONNECT TO THE https://buy.stripe.com/4gM28kfoZ0Xb2RBdTC0Ba0c OF SHADOWS — $5.99/MONTH</strong></a></p>
 
 <h3>BUNDLES — BUILT-IN DISCOUNTS</h3>
 
